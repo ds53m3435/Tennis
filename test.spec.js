@@ -1,5 +1,7 @@
 function Tennis() {
-
+	this.love = function(){
+		return 'Love - Love';
+	}
 }
 describe("Tennis", function() {
   it('should echo "Love - Love" when start game',function() {
