@@ -8,4 +8,8 @@ describe("Tennis", function() {
     var tennis = new Tennis();
     expect(tennis.love()).toEqual('Love - Love');
   })
+	it('should echo "Fifty - Love" when 15 - 0',function() {
+    var tennis = new Tennis();
+    expect(tennis.fifty()).toEqual('Fifty - Love');
+  })
 });
