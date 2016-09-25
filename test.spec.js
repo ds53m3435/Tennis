@@ -2,14 +2,20 @@ function Tennis() {
 	this.love = function(){
 		return 'Love - Love';
 	}
-  this.fiftylove = function(){
-    return 'Fifty - Love';
+  this.fifteenlove = function(){
+    return 'Fifteen - Love';
   }
   this.thirtylove = function(){
     return 'Thirty - Love';
   }
   this.fourtylove = function(){
     return 'Fourty - Love';
+  }
+  this.lovefifteen = function(){
+    return 'Love - Fifteen';
+  }
+  this.lovethity = function(){
+    return 'Love - Thirty';
   }
 
 }
@@ -18,9 +24,9 @@ describe("Tennis", function() {
     var tennis = new Tennis();
     expect(tennis.love()).toEqual('Love - Love');
   })
-	it('should echo "Fifty - Love" when 15 - 0',function() {
+	it('should echo "Fifteen - Love" when 15 - 0',function() {
     var tennis = new Tennis();
-    expect(tennis.fiftylove()).toEqual('Fifty - Love');
+    expect(tennis.fifteenlove()).toEqual('Fifteen - Love');
   })
   it('should wcho "Thirty - Love" when 30 - 0',function(){
     var tennis = new Tennis();
@@ -30,20 +36,20 @@ describe("Tennis", function() {
     var tennis = new Tennis();
     expect(tennis.fourtylove()).toEqual('Fourty - Love');
   })
-  it('should wcho "Love - Fifty" when 0 - 15',function(){
+  it('should wcho "Love - Fifteen" when 0 - 15',function(){
     var tennis = new Tennis();
-    expect(tennis.lovefifty()).toEqual('Love - Fifty');
+    expect(tennis.lovefifteen()).toEqual('Love - Fifteen');
   })
-  it('should wcho "Fifty - Fifty" when 15 - 15',function(){
+  it('should wcho "Fifteen - Fifteen" when 15 - 15',function(){
     var tennis = new Tennis();
-    expect(tennis.fiftyfifty()).toEqual('Fifty - Fifty');
+    expect(tennis.fifteenfifteen()).toEqual('Fifteen - Fifteen');
   })
-  it('should wcho "Thirty - Fifty" when 30 - 15',function(){
+  it('should wcho "Thirty - Fifteen" when 30 - 15',function(){
     var tennis = new Tennis();
-    expect(tennis.thirtyfifty()).toEqual('Thirty - Fifty');
+    expect(tennis.thirtyfifteen()).toEqual('Thirty - Fifteen');
   })
-  it('should wcho "Fourty - Fifty" when 40 - 15',function(){
+  it('should wcho "Fourty - Fifteen" when 40 - 15',function(){
     var tennis = new Tennis();
-    expect(tennis.fourtyfifty()).toEqual('Fourty - Fifty');
+    expect(tennis.fourtyfifteen()).toEqual('Fourty - Fifteen');
   })
 });
