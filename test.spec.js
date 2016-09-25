@@ -31,8 +31,12 @@ describe("Tennis", function() {
     var tennis = new Tennis();
     expect(tennis.fiftyfifty()).toEqual('Fifty - Fifty');
   })
-  it('should wcho "Fifty - Fifty" when 30 - 15',function(){
+  it('should wcho "Thirty - Fifty" when 30 - 15',function(){
     var tennis = new Tennis();
     expect(tennis.thirtyfifty()).toEqual('Thirty - Fifty');
+  })
+  it('should wcho "Fourty - Fifty" when 40 - 15',function(){
+    var tennis = new Tennis();
+    expect(tennis.fourtyfifty()).toEqual('Fourty - Fifty');
   })
 });
