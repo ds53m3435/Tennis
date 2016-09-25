@@ -2,8 +2,8 @@ function Tennis() {
 	this.love = function(){
 		return 'Love - Love';
 	}
-  this.fiftylove(){
-    return 'Fifty-love';
+  this.fiftylove = function(){
+    return 'Fifty - Love';
   }
 }
 describe("Tennis", function() {
@@ -15,5 +15,8 @@ describe("Tennis", function() {
     var tennis = new Tennis();
     expect(tennis.fiftylove()).toEqual('Fifty - Love');
   })
-  it('should wcho "Thirty - Love" when 30-0'),function
+  it('should wcho "Thirty - Love" when 30 - 0',function(){
+    var tennis = new Tennis();
+    expect(tennis.thirtylove()).toEqual('Thirty - Love');
+  })
 });
