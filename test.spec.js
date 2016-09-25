@@ -17,6 +17,9 @@ function Tennis() {
   this.fifteenfifteen = function(){
     return 'Fifteen - Fifteen';
   }
+  this.thirtyfifteen = function(){
+    return 'Thirty - Fifteen';
+  }
 
 }
 describe("Tennis", function() {
