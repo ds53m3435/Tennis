@@ -21,10 +21,14 @@ describe("Tennis", function() {
   })
   it('should wcho "Thirty - Love" when 40 - 0',function(){
     var tennis = new Tennis();
-    expect(tennis.thirtylove()).toEqual('Fourty - Love');
+    expect(tennis.fourtylove()).toEqual('Fourty - Love');
   })
   it('should wcho "Love - Fifty" when 0 - 15',function(){
     var tennis = new Tennis();
-    expect(tennis.thirtylove()).toEqual('Love - Fifty');
+    expect(tennis.lovefifty()).toEqual('Love - Fifty');
+  })
+  it('should wcho "Fifty - Fifty" when 15 - 15',function(){
+    var tennis = new Tennis();
+    expect(tennis.fiftyfifty()).toEqual('Fifty - Fifty');
   })
 });
