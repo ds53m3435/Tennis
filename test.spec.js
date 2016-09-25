@@ -14,8 +14,8 @@ function Tennis() {
   this.lovefifteen = function(){
     return 'Love - Fifteen';
   }
-  this.lovethity = function(){
-    return 'Love - Thirty';
+  this.fifteenfifteen = function(){
+    return 'Fifteen - Fifteen';
   }
 
 }
