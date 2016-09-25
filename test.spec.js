@@ -5,10 +5,13 @@ function Tennis() {
   this.fiftylove = function(){
     return 'Fifty - Love';
   }
-  this.thirdylove = function(){
+  this.thirtylove = function(){
     return 'Thirty - Love';
   }
-  
+  this.fourtylove = function(){
+    return 'Fourty - Love';
+  }
+
 }
 describe("Tennis", function() {
   it('should echo "Love - Love" when start game',function() {
