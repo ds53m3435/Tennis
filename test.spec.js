@@ -19,4 +19,8 @@ describe("Tennis", function() {
     var tennis = new Tennis();
     expect(tennis.thirtylove()).toEqual('Thirty - Love');
   })
+  it('should wcho "Thirty - Love" when 40 - 0',function(){
+    var tennis = new Tennis();
+    expect(tennis.thirtylove()).toEqual('Fourty - Love');
+  })
 });
