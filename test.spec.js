@@ -9,7 +9,12 @@ function Tennis(){
 
 	}  
 	this.getScoreB = function(){
-    
+    	if(ScoreB===0)
+    		ScoreB===15;
+    	else if(ScoreB===15)
+    		ScoreB===30;
+    	else if(ScoreB===30)
+    		ScoreB===40;
   	}
 	this.echo = function(){
 		if(ScoreA === 0 && ScoreB === 0){
