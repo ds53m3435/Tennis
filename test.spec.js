@@ -5,9 +5,12 @@ function Tennis(){
 	    ScoreA = 0;
 	    ScoreB = 0;
   }
-	this.getScoreB = function() {
+	this.getScoreA = function() {
 
-	}
+	}  
+	this.getScoreB = function(){
+    
+  	}
 	this.echo = function(){
 		if(ScoreA === 0 && ScoreB === 0){
 			return 'Love - Love';
@@ -16,9 +19,7 @@ function Tennis(){
 			return 'Fifty - Love';
 		}
 	}
-  this.getScoreB = function(){
-    
-  }
+
 }
 describe("Tennis", function() {
   it('should echo "Love - Love" when start game',function() {
