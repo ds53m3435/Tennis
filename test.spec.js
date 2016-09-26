@@ -1,4 +1,13 @@
-function Tennis() {
+class Tennis{
+   constructor(ScoreA,ScoreB) {
+    this.ScoreA = ScoreA;
+    this.ScoreB = ScoreB;
+  }
+}
+
+
+
+/*function Tennis() {
 	this.love = function(){
 		return 'Love - Love';
 	}
@@ -59,3 +68,4 @@ describe("Tennis", function() {
     expect(tennis.fourtyfifteen()).toEqual('Fourty - Fifteen');
   })
 });
+*/
