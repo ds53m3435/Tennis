@@ -1,45 +1,25 @@
-class Tennis{
-   constructor(ScoreA,ScoreB) {
-    this.ScoreA = ScoreA;
-    this.ScoreB = ScoreB;
+function Tennis(){
+	var ScoreA;
+	var ScoreB;
+   this.start = function() {
+	    ScoreA = 0;
+	    ScoreB = 0;
   }
-}
-
-
-
-/*function Tennis() {
-	this.love = function(){
-		return 'Love - Love';
+	this.echo = function(){
+		if(ScoreA ===0 && ScoreB === 0){
+			return 'Love - Love';
+		}
 	}
-  this.fifteenlove = function(){
-    return 'Fifteen - Love';
-  }
-  this.thirtylove = function(){
-    return 'Thirty - Love';
-  }
-  this.fourtylove = function(){
-    return 'Fourty - Love';
-  }
-  this.lovefifteen = function(){
-    return 'Love - Fifteen';
-  }
-  this.fifteenfifteen = function(){
-    return 'Fifteen - Fifteen';
-  }
-  this.thirtyfifteen = function(){
-    return 'Thirty - Fifteen';
-  }
-  this.fourtyfifteen = function(){
-    return 'Fourty - Fifteen';
-  }
-
 }
+
+
 describe("Tennis", function() {
   it('should echo "Love - Love" when start game',function() {
     var tennis = new Tennis();
-    expect(tennis.love()).toEqual('Love - Love');
+		tennis.start();
+    expect(tennis.echo()).toEqual('Love - Love');
   })
-	it('should echo "Fifteen - Love" when 15 - 0',function() {
+	/*it('should echo "Fifteen - Love" when 15 - 0',function() {
     var tennis = new Tennis();
     expect(tennis.fifteenlove()).toEqual('Fifteen - Love');
   })
@@ -66,6 +46,5 @@ describe("Tennis", function() {
   it('should echo "Fourty - Fifteen" when 40 - 15',function(){
     var tennis = new Tennis();
     expect(tennis.fourtyfifteen()).toEqual('Fourty - Fifteen');
-  })
+  })*/
 });
-*/
