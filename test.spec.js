@@ -52,8 +52,33 @@ describe("Tennis", function() {
         tennis.getScoreA();
         expect(tennis.echo()).toEqual('Thirty - Fifteen');
     })
-    it('should echo "Fourty - Fifteen" when get ScoreA', function() {
+    it('should echo "Fourty - Fifteen" when get Score A', function() {
         tennis.getScoreA();
         expect(tennis.echo()).toEqual('Fourty - Fifteen');
+    })
+
+    it('should echo "Love - Love" when start game', function() {
+        tennis.start();
+        expect(tennis.echo()).toEqual('Love - Love');
+    })
+    it('should echo "Fifteen - Love" when get score A', function() {
+        tennis.getScoreA();
+        expect(tennis.echo()).toEqual('Fifteen - Love');
+    })
+    it('should echo "Fifteen - Fifteen" when get score B', function() {
+        tennis.getScoreB();
+        expect(tennis.echo()).toEqual('Fifteen - Fifteen');
+    })
+    it('should echo "Fifteen - Thirty" when get score B', function() {
+        tennis.getScoreB();
+        expect(tennis.echo()).toEqual('Fifteen - Thirty');
+    })
+    it('should echo "Thirty - Thirty" when get Score A', function() {
+        tennis.getScoreA();
+        expect(tennis.echo()).toEqual('Thirty - Thirty');
+    })
+    it('should echo "Thirty - Fourty" when get Score B', function() {
+        tennis.getScoreB();
+        expect(tennis.echo()).toEqual('Thirty - Fourty');
     })
 });
