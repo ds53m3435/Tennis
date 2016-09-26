@@ -5,17 +5,21 @@ function Tennis(){
 	    ScoreA = 0;
 	    ScoreB = 0;
   }
+	this.getScoreB = function() {
+
+	}
 	this.echo = function(){
-		if(ScoreA ===0 && ScoreB === 0){
+		if(ScoreA === 0 && ScoreB === 0){
 			return 'Love - Love';
+		}
+		else if(ScoreA === 15 && ScoreB === 0){
+			return 'Fifty - Love';
 		}
 	}
   this.getScoreB = function(){
     
   }
 }
-
-
 describe("Tennis", function() {
   it('should echo "Love - Love" when start game',function() {
     var tennis = new Tennis();
