@@ -27,7 +27,7 @@ function Tennis(){
 			return 'Love - Love';
 		}
 		else if(ScoreA === 0 && ScoreB === 15){
-			return 'Love - Fifty';
+			return 'Love - Fifteen';
 		}
 		else if(ScoreA === 0 && ScoreB === 30){
 			return 'Love - Thirty';
@@ -36,16 +36,40 @@ function Tennis(){
             return 'Love - Fourty';
         }
         else if(ScoreA === 15 && ScoreB === 0){
-            return 'Fifty - Love';
+            return 'Fifteen - Love';
         }
         else if(ScoreA === 15 && ScoreB === 15){
-            return 'Fifty - Fifty';
+            return 'Fifteen - Fifteen';
         }
         else if(ScoreA === 15 && ScoreB === 30){
-            return 'Fifty - Thirty';
+            return 'Fifteen - Thirty';
         }
         else if(ScoreA === 15 && ScoreB === 40){
-            return 'Fifty - Fourty';
+            return 'Fifteen - Fourty';
+        }
+        if(ScoreA === 30 && ScoreB === 0){
+            return 'Thirty - Love';
+        }
+        else if(ScoreA === 30 && ScoreB === 15){
+            return 'Thirty - Fifteen';
+        }
+        else if(ScoreA === 30 && ScoreB === 30){
+            return 'Thirty - Thirty';
+        }
+        else if(ScoreA === 30 && ScoreB === 40){
+            return 'Thirty - Fourty';
+        }
+        else if(ScoreA === 40 && ScoreB === 0){
+            return 'Fourty - Love';
+        }
+        else if(ScoreA === 40 && ScoreB === 15){
+            return 'Foury - Fifteen';
+        }
+        else if(ScoreA === 40 && ScoreB === 30){
+            return 'Fourty - Thirty';
+        }
+        else if(ScoreA === 40 && ScoreB === 40){
+            return 'Fourty - Fourty';
         }
 	}
 }
