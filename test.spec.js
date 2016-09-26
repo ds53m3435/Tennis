@@ -6,11 +6,19 @@ function Tennis(){
 	    ScoreB = 0;
   }
 	this.getScoreA = function() {
-
-	}  
+		if(ScoreA === 0) {
+			ScoreA = 15;
+		}
+		else if(ScoreA === 15) {
+			ScoreA = 30;
+		}
+		else if(ScoreA === 30) {
+			ScoreA = 40;
+		}
+	}
 	this.getScoreB = function(){
-    
-  	}
+
+  }
 	this.echo = function(){
 		if(ScoreA === 0 && ScoreB === 0){
 			return 'Love - Love';
