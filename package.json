@@ -15,8 +15,8 @@
     "url": "https://github.com/ds53m3435/tennis/issues"
   },
   "homepage": "https://github.com/ds53m3435/tennis#readme",
-  "description": "",
   "devDependencies": {
     "jasmine": "^2.5.2"
-  }
+  },
+  "description": ""
 }
