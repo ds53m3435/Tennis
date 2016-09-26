@@ -28,9 +28,13 @@ function Tennis(){
 		if(ScoreA === 0 && ScoreB === 0){
 			return 'Love - Love';
 		}
-		else if(ScoreA === 15 && ScoreB === 0){
-			return 'Fifty - Love';
+		else if(ScoreA === 0 && ScoreB === 15){
+			return 'Love - Fifty';
 		}
+		else if(ScoreA === 0 && ScoreB === 30){
+			return 'Love - Thirty';
+		}
+		
 	}
 
 }
