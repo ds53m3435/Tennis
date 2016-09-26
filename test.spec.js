@@ -16,40 +16,22 @@ function Tennis() {
         else if (ScoreB === 30) ScoreB = 40;
     }
     this.echo = function() {
-        if (ScoreA === 0 && ScoreB === 0) {
-            return 'Love - Love';
-        } else if (ScoreA === 0 && ScoreB === 15) {
-            return 'Love - Fifteen';
-        } else if (ScoreA === 0 && ScoreB === 30) {
-            return 'Love - Thirty';
-        } else if (ScoreA === 0 && ScoreB === 40) {
-            return 'Love - Fourty';
-        } else if (ScoreA === 15 && ScoreB === 0) {
-            return 'Fifteen - Love';
-        } else if (ScoreA === 15 && ScoreB === 15) {
-            return 'Fifteen - Fifteen';
-        } else if (ScoreA === 15 && ScoreB === 30) {
-            return 'Fifteen - Thirty';
-        } else if (ScoreA === 15 && ScoreB === 40) {
-            return 'Fifteen - Fourty';
-        }
-        if (ScoreA === 30 && ScoreB === 0) {
-            return 'Thirty - Love';
-        } else if (ScoreA === 30 && ScoreB === 15) {
-            return 'Thirty - Fifteen';
-        } else if (ScoreA === 30 && ScoreB === 30) {
-            return 'Thirty - Thirty';
-        } else if (ScoreA === 30 && ScoreB === 40) {
-            return 'Thirty - Fourty';
-        } else if (ScoreA === 40 && ScoreB === 0) {
-            return 'Fourty - Love';
-        } else if (ScoreA === 40 && ScoreB === 15) {
-            return 'Fourty - Fifteen';
-        } else if (ScoreA === 40 && ScoreB === 30) {
-            return 'Fourty - Thirty';
-        } else if (ScoreA === 40 && ScoreB === 40) {
-            return 'Fourty - Fourty';
-        }
+        if (ScoreA === 0 && ScoreB === 0) return 'Love - Love';
+        else if (ScoreA === 0 && ScoreB === 15) return 'Love - Fifteen';
+        else if (ScoreA === 0 && ScoreB === 30) return 'Love - Thirty';
+        else if (ScoreA === 0 && ScoreB === 40) return 'Love - Fourty';
+        else if (ScoreA === 15 && ScoreB === 0) return 'Fifteen - Love';
+        else if (ScoreA === 15 && ScoreB === 15) return 'Fifteen - Fifteen';
+        else if (ScoreA === 15 && ScoreB === 30) return 'Fifteen - Thirty';
+        else if (ScoreA === 15 && ScoreB === 40) return 'Fifteen - Fourty';
+        if (ScoreA === 30 && ScoreB === 0) return 'Thirty - Love';
+        else if (ScoreA === 30 && ScoreB === 15) return 'Thirty - Fifteen';
+        else if (ScoreA === 30 && ScoreB === 30) return 'Thirty - Thirty';
+        else if (ScoreA === 30 && ScoreB === 40) return 'Thirty - Fourty';
+        else if (ScoreA === 40 && ScoreB === 0) return 'Fourty - Love';
+        else if (ScoreA === 40 && ScoreB === 15) return 'Fourty - Fifteen';
+        else if (ScoreA === 40 && ScoreB === 30) return 'Fourty - Thirty';
+        else if (ScoreA === 40 && ScoreB === 40) return 'Fourty - Fourty';
     }
 }
 describe("Tennis", function() {
